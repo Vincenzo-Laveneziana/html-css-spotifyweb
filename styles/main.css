@@ -99,13 +99,13 @@ a{
   padding: 5px 0;
 }
 
-.sidebar-top .playlist h4{
-  padding: 0 20px ;
+.sidebar-top .playlist h5{
+  padding: 0 20px 5px;
   text-transform: uppercase;
 }
 
 .sidebar-top .playlist li{
-  padding: 10px 15px;
+  padding: 5px 15px;
   border-left: 3px solid transparent;
 }
 
@@ -122,6 +122,7 @@ a{
 
 .sidebar-top .playlist li span{
   color: #7F8283;
+  font-size: 13px;
 }
 
 .sidebar-top .playlist li:hover i,
@@ -130,16 +131,50 @@ a{
 }
 
 
-
-
-
-
-
 /* sidebar bottom */
 .sidebar-bottom{
-  height: 80px; /*debug*/
-  background: #222;
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+.install-app {
+  flex-basis: 100%;
+  padding: 10px;
+}
+
+.install{
+  font-size: 13px;
+  max-width: 90%;
+  padding: 10px 5px;
+  border-bottom: 0.5px solid #7F8283;
+}
+
+.install a:hover i,
+.install a:hover span{
+  color: white;
+  font-weight: bold;
+}
+
+.profile{
+  width: 100%;
+  padding: 5px 10px 10px;
+}
+
+.sidebar-bottom .profile img{
+  width: 30px;
+  padding: 2px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: #7F8283;
+}
+
+.sidebar-bottom .profile span{
+  padding-left: 5px;
+  font-weight: bold;
+}
+
 
 /* CONTENT */
 #content{
@@ -155,7 +190,7 @@ a{
   width: 100%;
   height: 90px;
   background: rgba(100, 50,0, .5);
-  z-index: 1;
+  z-index: 0; /* default 1*/
 }
 
 #content .scrollable{

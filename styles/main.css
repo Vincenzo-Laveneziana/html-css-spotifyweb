@@ -254,16 +254,39 @@ li{
 }
 
 .content-menu ul{
-  flex-basis: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  text-align: center;
 }
 
-.content-menu ul li{
-
+.content-menu li{
+  display: inline-block;
+  padding: 0 10px;
 }
 
+.content-menu a{
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #7F8283;
+  position: relative;
+}
+
+.content-menu a::after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #86C52E;
+  bottom: -5px;
+  left: 50%;
+  width: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.content-menu a:hover:after{
+  opacity: 1;
+}
+
+
+/* content > scrollable > category */
 .content-category{
   height: 200px; /* Debug */
 }

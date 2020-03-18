@@ -1,3 +1,4 @@
+
 /* GENERAL */
 *{
   margin: 0;
@@ -8,11 +9,16 @@
 body{
   font-family: 'Montserrat', sans-serif;
   color: #fff;
+
 }
 
 a{
   text-decoration: none;
   color: white;
+}
+
+li{
+  list-style: none;
 }
 
 /* Utility */
@@ -131,7 +137,7 @@ a{
 }
 
 
-/* sidebar bottom */
+/* sidebar > sidebar-bottom */
 .sidebar-bottom{
   background: black;
   display: flex;
@@ -180,18 +186,52 @@ a{
 #content{
   position: relative;
   flex-grow: 1;
-  background: #000;
+  background: #141921;
 }
 
+
+/* content > content-top-bar */
 .content-top-bar{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 90px;
-  background: rgba(100, 50,0, .5);
-  z-index: 0; /* default 1*/
+  background: rgba(0, 0,0, .5);
+  z-index: 1; /* default 1*/
+  display: flex;
+  align-items: center;
 }
+
+.content-top-bar button{
+  background: transparent;
+  position: absolute;
+  right: 50px;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+.content-top-bar button:hover{
+  transition: 0.7s;
+  background: white;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+.content-top-bar button:hover h6{
+  color: black;
+}
+
+.content-top-bar h6{
+  padding: 10px 40px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+
+
+/* content > scrollable */
 
 #content .scrollable{
   position: absolute;
@@ -204,9 +244,24 @@ a{
   padding: 90px 15px 30px;
 }
 
+
+/* content > scrollable > content-menu */
 .content-menu{
-  height: 80px; /*debug*/
-  background: #222;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-menu ul{
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.content-menu ul li{
+
 }
 
 .content-category{

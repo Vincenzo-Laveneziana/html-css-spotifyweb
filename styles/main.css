@@ -10,6 +10,20 @@ body{
   color: #fff;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/* Utility */
+.no-list{
+  list-style: none;
+}
+
+.lightgrey{
+  color: #7F8283;
+}
+
 /* LAYOUT */
 #app{
   display: flex;
@@ -32,11 +46,96 @@ body{
   flex-direction: column;
 }
 
+/* sidebar > sidebar-top */
 .sidebar-top{
   flex-grow: 1;
-  background: #444;
+  background: black;
 }
 
+/* sidebar > sidebar-top > logo */
+
+.sidebar-top .logo img{
+  width: 180px;
+  padding: 20px 20px ;
+}
+
+/* sidebar > sidebar-top > category */
+
+.sidebar-top .category{
+  margin-bottom: 20px;
+}
+
+.sidebar-top .category li{
+  border-left: 3px solid transparent;
+  padding: 5px 0;
+}
+
+.sidebar-top .category li:hover{
+  border-left: 3px solid lightgreen;
+}
+
+.sidebar-top .category a{
+  padding: 0 15px;
+}
+
+.sidebar-top .category a img{
+  width: 30px;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+
+.sidebar-top .category a span{
+  font-size: 13px;
+  font-weight: 500;
+  color: #7F8283;
+}
+
+.sidebar-top .category li:hover span{
+  color: white;
+}
+
+/* sidebar > sidebar-top > playlist */
+.sidebar-top .playlist {
+  padding: 5px 0;
+}
+
+.sidebar-top .playlist h4{
+  padding: 0 20px ;
+  text-transform: uppercase;
+}
+
+.sidebar-top .playlist li{
+  padding: 10px 15px;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-top .playlist li:hover{
+  border-left: 3px solid lightgreen;
+}
+
+
+.sidebar-top .playlist li:first-child i{
+  font-size: 40px;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+.sidebar-top .playlist li span{
+  color: #7F8283;
+}
+
+.sidebar-top .playlist li:hover i,
+.sidebar-top .playlist li:hover span{
+  color: white;
+}
+
+
+
+
+
+
+
+/* sidebar bottom */
 .sidebar-bottom{
   height: 80px; /*debug*/
   background: #222;

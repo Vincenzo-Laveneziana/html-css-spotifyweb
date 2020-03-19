@@ -374,7 +374,11 @@ li{
 
 .content-category .box .album img{
   width: 100%;
-  height: 100%;
+   /* WARNING:  */
+   /* non so per quale motivo ma se tolgo l'altezza il layover esce qualche pixel in giù fuori dal contenitore.
+   mentre se aggiungo un'altezza alcune immagini saranno qualche pixel più piccole e quando si passa il mouse sopra fà un mini effetto zoom */
+   /* WARNING:  */
+  /* height: 100%; */
 }
 
 .content-category .box .album  h6{
@@ -391,7 +395,7 @@ li{
 }
 
 .layover i{
-  color: #fff;
+  color: white;
   font-size: 40px;
   display: none;
 }

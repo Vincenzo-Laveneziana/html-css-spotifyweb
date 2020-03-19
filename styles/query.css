@@ -1,32 +1,42 @@
 /* Small devices */
-@media (max-width: 600px) {
+@media (max-width: 600px){
+  /* general */
+  .no-visibility-small{
+    display: none;
+  }
 
   #sidebar{
     flex-basis: 10%; /* larghezza sidebar */
   }
 
   .sidebar-top .logo{
-    margin: 0;
-    padding: 0;
+    justify-content: center;
   }
 
   .sidebar-top .logo .visibility-small{
-    /* display: inline-block;
+    display: inline-block;
     width: 50px;
-    padding: 0;
-    margin: 0; */
-    }
-
-  .sidebar-top .logo img{
-    display: none;
+    padding: 10px;
   }
 
-  .sidebar-top .category {
+  .sidebar-top .category span {
     display: none;
   }
 
   .playlist {
     display: none;
+  }
+
+  .install{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    border-bottom: 0;
+    justify-content: center;
+  }
+
+  .profile{
+    justify-content: center;
   }
 
   .content-category{
@@ -38,18 +48,67 @@
     margin-bottom: 20px;
   }
 
-  .content-category .box .album:nth-of-type(1){
-
+  .content-category .box .album h6{
+    font-size: 13px;
   }
 
+  .content-category .box .album span{
+    font-size: 13px;
+  }
+
+  .content-menu li{
+    padding: 10px 10px;
+  }
+
+  .bottom-control-player .line i{
+    left: 18%;
+  }
 }
 
-/* Medium devices*/
-@media all and (min-width: 601px) and (max-width: 1024px)   {
+/* medium devices*/
+@media all and (min-width: 601px) and (max-width: 850px){
 
+  #sidebar{
+    flex-basis: 180px; /* larghezza sidebar */
+  }
+
+  .content-menu{
+    padding: 20px 0 0;
+  }
+
+  .content-menu li{
+    padding: 0px 5px 10px ;
+  }
+
+  .content-category{
+    padding: 0;
+  }
+
+  .content-category .box .album{
+    flex-basis: calc(100% / 3);
+    margin-bottom: 20px;
+  }
 }
 
-/*Large devices  */
-@media all and (min-width: 1025px) {
+
+/* large devices*/
+@media all and (min-width: 851px) and (max-width: 1199px){
+
+   #sidebar{
+    flex-basis: 180px; /* larghezza sidebar */
+  }
+
+  .content-menu li{
+    padding: 5px 7px;
+  }
+
+  .content-category .box .album{
+    flex-basis: calc(100% / 4) ;
+    margin-bottom: 20px;
+  }
+}
+
+/* extra Large devices  */
+@media all and (min-width: 1200px){
 
 }

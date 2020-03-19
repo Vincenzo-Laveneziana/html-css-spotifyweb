@@ -1,0 +1,55 @@
+/* Small devices */
+@media (max-width: 600px) {
+
+  #sidebar{
+    flex-basis: 10%; /* larghezza sidebar */
+  }
+
+  .sidebar-top .logo{
+    margin: 0;
+    padding: 0;
+  }
+
+  .sidebar-top .logo .visibility-small{
+    /* display: inline-block;
+    width: 50px;
+    padding: 0;
+    margin: 0; */
+    }
+
+  .sidebar-top .logo img{
+    display: none;
+  }
+
+  .sidebar-top .category {
+    display: none;
+  }
+
+  .playlist {
+    display: none;
+  }
+
+  .content-category{
+    padding: 0;
+  }
+
+  .content-category .box .album{
+    flex-basis: calc(100% / 2) ;
+    margin-bottom: 20px;
+  }
+
+  .content-category .box .album:nth-of-type(1){
+
+  }
+
+}
+
+/* Medium devices*/
+@media all and (min-width: 601px) and (max-width: 1024px)   {
+
+}
+
+/*Large devices  */
+@media all and (min-width: 1025px) {
+
+}

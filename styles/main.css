@@ -55,6 +55,32 @@ li{
   position: absolute;
 }
 
+.line{
+  vertical-align: middle;
+  position: relative;
+  background-color: #535353;
+  height: 4px;
+  flex-basis: 50%;
+  border-radius: 10px;
+  margin: 4px 10px 0;
+}
+
+.line::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 25%;
+  background-color: #bababa;
+  border-radius: 10px;
+}
+
+.line:hover::before{
+  background-color: white;
+}
+
+
 /* LAYOUT */
 #app{
   height: 100vh;
@@ -84,6 +110,12 @@ li{
   width: 180px;
   padding: 20px 20px ;
 }
+
+.sidebar-top .logo .visibility-small{
+  display: none;
+}
+
+
 
 /* sidebar > sidebar-top > category */
 
@@ -377,13 +409,14 @@ li{
 
 /* BOTTOM PLAYER */
 #player{
-
+  justify-content: space-between;
   background: #333;
 }
 
 /* player > cover*/
 
 .cover {
+  flex-basis: 250px;
   padding: 15px 0;
   align-items: center;
 }
@@ -393,7 +426,7 @@ li{
 }
 
 .cover a:nth-child(2){
-  margin-right: 35px;
+  margin-right: 20px;
 }
 .cover a:nth-child(3){
   margin-right: 10px;
@@ -423,9 +456,11 @@ li{
   transition: 300ms;
 }
 
+
 /* player > control-player*/
 .control-player{
   flex-grow: 1;
+  /* flex-basis: 100%; */
   justify-content: center;
   align-items: center;
 }
@@ -434,8 +469,8 @@ li{
 .bottom-control-player{
   display: flex;
   align-items: center;
-  height: 50%;
-  padding: 5px 0;
+  padding-bottom: 5px;
+  /* height: 50%; */
   /* DEBUG: delet */
 }
 
@@ -450,33 +485,76 @@ li{
 }
 
 .top-control-player a:nth-child(3) i{
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .top-control-player i:hover{
   color: white;
 }
 
-
-
-
-
-/* Small devices */
-@media (max-width: 600px) {
-
+/* player > control-player > bottom-control-player*/
+.bottom-control-player{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-/* Medium devices*/
-@media all and (min-width: 601px) and (max-width: 1024px)   {
-
+.bottom-control-player span{
+  font-size: 13px;
+  color: #7F8283;
 }
 
-/*Large devices  */
-@media all and (min-width: 1025px) {
+.bottom-control-player .line{
+  flex-basis: 50%;
+  margin: 0 20px;
+}
 
+.bottom-control-player .line i{
+  position: absolute;
+  top: 0;
+  left: 24%;
+  transform: translateY(-6px);
+  color: #8be60d;
+  visibility: hidden;
+}
+
+.line:hover{
+  visibility: visible;
+}
+
+.bottom-control-player .line:hover i{
+  visibility: visible;
 }
 
 
+/* player > control-player > volume*/
+
+.volume{
+  flex-basis: 250px;
+  display: flex;
+  align-items: center;
+}
+
+.volume a{
+  margin: 0 5px;
+}
+
+.volume i{
+  font-size: 12px;
+}
+
+.volume .line i{
+  position: absolute;
+  top: 0;
+  left: 20%;
+  transform: translateY(-4px);
+  color: #8be60d;
+  visibility: hidden;
+}
+
+.volume .line:hover i{
+  visibility: visible;
+}
 
 
 

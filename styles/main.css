@@ -30,10 +30,21 @@ li{
   color: #7F8283;
 }
 
-/* LAYOUT */
-#app{
+.flex{
+  display: flex;
+}
+
+.flex-column{
   display: flex;
   flex-direction: column;
+}
+
+.circle{
+  border-radius: 50%;
+}
+
+/* LAYOUT */
+#app{
   height: 100vh;
 }
 
@@ -41,15 +52,12 @@ li{
 /* MAIN WINDOW */
 #main-window{
   flex-grow: 1;
-  display: flex;
 }
 
 
 /* SIDEBAR */
 #sidebar{
   flex-basis: 230px; /* larghezza sidebar */
-  display: flex;
-  flex-direction: column;
 }
 
 /* sidebar > sidebar-top */
@@ -140,7 +148,6 @@ li{
 /* sidebar > sidebar-bottom */
 .sidebar-bottom{
   background: black;
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -161,6 +168,7 @@ li{
 .install a:hover span{
   color: white;
   font-weight: bold;
+  transition: 200ms
 }
 
 .profile{
@@ -240,16 +248,14 @@ li{
   width: 100%;
   height: 100%;
   overflow-y: auto;
-  padding: 90px 15px 30px;
+  padding: 90px 15px 0;
 }
 
 
 /* content > scrollable > content-menu */
 .content-menu{
   padding: 20px 0;
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .content-menu ul{
@@ -266,6 +272,10 @@ li{
   font-size: 13px;
   color: #7F8283;
   position: relative;
+}
+
+.content-menu a:hover{
+  color: white;
 }
 
 .content-menu a::after{
@@ -287,28 +297,43 @@ li{
 
 /* content > scrollable > category */
 .content-category{
-  min-height: 200px; /* Debug */
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.content-category h3{
+  padding: 5px 0;
+}
+
+.content-category span{
+  font-size: 10px;
+  color: #7F8283;
 }
 
 .content-category .box{
   display: flex;
   flex-wrap: wrap;
+  padding: 15px 0;
 }
 
 .content-category .box .album{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   padding-right: 15px;
   flex-basis: calc(100% / 6);
+  text-align: center;
 }
 
 .content-category .box img{
   width: 100%;
 }
+
+.content-category .box  h6{
+  padding: 10px 0;
+}
+
+
+
 
 
 
@@ -319,3 +344,29 @@ li{
   height: 80px; /*debug*/
   background: #333;
 }
+
+
+
+
+
+/* Small devices */
+@media (max-width: 600px) {
+
+}
+
+/* Medium devices*/
+@media all and (min-width: 601px) and (max-width: 1024px)   {
+
+}
+
+/*Large devices  */
+@media all and (min-width: 1025px) {
+
+}
+
+
+
+
+
+
+/*  */

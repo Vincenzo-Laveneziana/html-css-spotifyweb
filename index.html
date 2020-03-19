@@ -23,11 +23,11 @@
 
 <body>
 
-  <div id="app">
+  <div id="app" class="flex-column">
       <!-- Main content -->
-    <main id="main-window">
+    <main id="main-window" class="flex">
       <!-- Sidebar -->
-      <aside id="sidebar">
+      <aside id="sidebar" class="flex-column">
         <div class="sidebar-top">
 
           <div class="logo">
@@ -126,7 +126,7 @@
           </div>
         </div>
 
-        <div class="sidebar-bottom">
+        <div class="sidebar-bottom flex">
 
           <div class="install-app">
             <div class="install">
@@ -149,7 +149,8 @@
       </aside>
 
       <!-- Content -->
-      <div id="content">
+      <div id="content" class="flex">
+        
         <div class="content-top-bar">
           <button type="button" name="button">
             <a href="#">
@@ -162,7 +163,7 @@
 
         <div class="scrollable">
 
-          <nav class="content-menu">
+          <nav class="content-menu flex">
             <ul>
               <li>
                 <a href="#">In evidenza</a>
@@ -191,27 +192,74 @@
             <div class="box">
               <div class="album">
                 <img src="img/metal_lifting.jpg" alt="album">
-                <span>ciao</span>
+                <h6>Heavy Metal</h6>
+                <span>Subtitle</span>
               </div>
 
               <div class="album">
                 <img src="img/stranger.jpeg" alt="album">
-              </div>
-
-              <div class="album">
-                <img src="img/aquietplace.jpeg" alt="album">
+                <h6>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h6>
+                <span>Kyle Dixon & Michael Stein</span>
               </div>
 
               <div class="album">
                 <img src="img/split.jpeg" alt="album">
+                <h6>A quiet place</h6>
+                <span>Subtitle</span>
               </div>
 
               <div class="album">
-                <img src="img/cure.jpeg" alt="album">
+                <img src="img/gigi.jpg" alt="Sia chiaro non ascolto questo cantante">
+                <h6>Il caro Gigi</h6>
+                <span>E' stato più forte di me ^_^</span>
               </div>
 
               <div class="album">
                 <img src="img/sinister.jpeg" alt="album">
+                <h6>A cure for wellness</h6>
+                <span>Subtitle</span>
+              </div>
+
+              <div class="album">
+                <img src="img/aquietplace.jpeg" alt="album">
+                <h6>Sinister</h6>
+                <span>Subtitle</span>
+              </div>
+            </div>
+
+          </section>
+
+          <section class="content-category">
+            <h3>Creato per Vincenzo</h3>
+            <span>Più ascolti, più accurati saranno i suggerimenti</span>
+
+            <div class="box">
+              <div class="album">
+                <img src="img/radar.jpeg" alt="album">
+                <h6>Release Radar</h6>
+              </div>
+
+              <div class="album">
+                <img src="img/mixdaily.jpeg" alt="album">
+                <h6>Daily Mix 1</h6>
+              </div>
+            </div>
+
+          </section>
+
+          <section class="content-category">
+            <h3>Artisti più popolari</h3>
+            <span>Più ascolti, più accurati saranno i suggerimenti</span>
+
+            <div class="box">
+              <div class="album">
+                <img class="circle" src="img/young.jpeg" alt="album">
+                <h6>Lana del Rey</h6>
+              </div>
+
+              <div class="album">
+                <img class="circle" src="img/einaudi.jpeg" alt="album">
+                <h6>Ludovico Einaudi</h6>
               </div>
             </div>
 
@@ -219,24 +267,8 @@
 
           </section>
 
-          <section class="content-category">
-              <h2>Category title</h2>
-          </section>
-          <section class="content-category">
-              <h2>Category title</h2>
-          </section>
-          <section class="content-category">
-              <h2>Category title</h2>
-          </section>
-          <section class="content-category">
-              <h2>Category title</h2>
-          </section>
-          <section class="content-category">
-              <h2>Category title</h2>
-          </section>
-          <section class="content-category">
-              <h2>Category title</h2>
-          </section>
+
+
         </div>
       </div>
     </main>

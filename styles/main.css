@@ -364,8 +364,8 @@ li{
 }
 
 .content-category .box .album{
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   /* align-items: center; */
   padding: 0 15px 5px 0;
   flex-basis: calc(100% / 6);
@@ -374,11 +374,7 @@ li{
 
 .content-category .box .album img{
   width: 100%;
-   /* WARNING:  */
-   /* non so per quale motivo ma se tolgo l'altezza il layover esce qualche pixel in giù fuori dal contenitore.
-   mentre se aggiungo un'altezza alcune immagini saranno qualche pixel più piccole e quando si passa il mouse sopra fà un mini effetto zoom */
-   /* WARNING:  */
-  /* height: 100%; */
+  display: block;
 }
 
 .content-category .box .album  h6{
@@ -406,8 +402,7 @@ li{
 }
 
 .overlay:hover .layover{
-  background: rgba(0,0,0, .5);
-
+  background: rgba( 0, 0, 0, 0.5);
 }
 
 .overlay:hover .layover i{

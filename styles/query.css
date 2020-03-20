@@ -63,6 +63,27 @@
   .bottom-control-player .line i{
     left: 18%;
   }
+
+  .cover {
+    justify-content: space-between;
+    padding: 0 10px 0 0;
+  }
+
+  .cover .icon{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .cover a{
+    margin: 0;
+  }
+
+  .cover a:nth-child(2){
+    margin: 0;
+  }
+
 }
 
 /* medium devices*/
@@ -88,6 +109,16 @@
     flex-basis: calc(100% / 3);
     margin-bottom: 20px;
   }
+
+  .cover a:nth-child(1){
+    margin-right: 5px;
+  }
+
+  .cover a:nth-child(2){
+    margin: 0;
+  }
+
+
 }
 
 /* large devices*/
@@ -104,6 +135,10 @@
   .content-category .box .album{
     flex-basis: calc(100% / 4) ;
     margin-bottom: 20px;
+  }
+
+  .cover a:nth-child(2){
+    margin-right: 15px;
   }
 }
 

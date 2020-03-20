@@ -414,13 +414,13 @@ li{
 #player{
   justify-content: space-between;
   background: #333;
+  padding: 10px 5px;
 }
 
 /* player > cover*/
 
 .cover {
   flex-basis: 250px;
-  padding: 15px 0;
   align-items: center;
 }
 
@@ -428,11 +428,9 @@ li{
   margin: 0 5px;
 }
 
+
 .cover a:nth-child(2){
-  margin-right: 20px;
-}
-.cover a:nth-child(3){
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .cover img{
@@ -457,6 +455,10 @@ li{
 .cover i:hover{
   color: white;
   transition: 300ms;
+}
+
+.cover .icon{
+  margin-left: 5px;
 }
 
 
@@ -535,6 +537,7 @@ li{
 .volume{
   flex-basis: 250px;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 
